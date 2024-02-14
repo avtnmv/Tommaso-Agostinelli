@@ -19,7 +19,7 @@
 .container{
     margin: auto;
     max-width: 420px;
-    height: 5550px;
+    height: 6050px;
     background-image: url(./img/mainBackGround.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -418,7 +418,17 @@ svg{
     }
 
   }
+  
   @media screen and (max-width: 375px){
+    .container{
+        margin: auto;
+        max-width: 420px;
+        height: 5550px;
+        background-image: url(./img/mainBackGround.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
     .img5{
         position: absolute;
         top: 1360px;
@@ -489,6 +499,18 @@ svg{
   width: 260px;
   height: 39px;
   margin-top: 55px;
+}
+  }
+  @media screen and (min-width: 425px){
+    .exp-svg{
+        margin-top: 50px;
+    }
+    .exp p{margin-top: 75px;}
+  }
+  @media screen and (min-width: 350px){
+.svg-absolute{
+    position: absolute;
+    top: 1685px;
 }
   }
   @media screen and (max-width: 365px){

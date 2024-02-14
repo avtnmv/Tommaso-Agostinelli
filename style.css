@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
 }
 @font-face {
     font-family: 'Benzin';
@@ -16,10 +19,11 @@
 .container{
     margin: auto;
     max-width: 420px;
-    height: 6000px;
+    height: 5550px;
     background-image: url(./img/mainBackGround.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 .logo{
     font-family: 'Benzin';
@@ -76,6 +80,7 @@
     line-height: 15px;
     letter-spacing: 0%;
     margin-right: 32px;
+    margin-bottom: 100px;
 }
 .howChangedFlex{
     display: flex;
@@ -94,7 +99,7 @@
     font-weight: 800;
     line-height: 28px;
     margin: auto;
-    margin-top: 171px;
+    margin-top: 40px;
 }
 .counter p{
     margin-top: 15px;
@@ -113,23 +118,26 @@
     text-align: left;
 }
 .counter-block1{
-    width: 81px;
+    width: 71px;
     height: 26px;
     text-align: center;
 }
 .counter-block2{
-    width: 51px;
+    width: 65px;
     height: 26px;
     text-align: center;
 }
-svg{
+
+.exp-svg{
+    margin-top: 120px;
     position: absolute;
 }
+
 .exp{
     display: flex;
     justify-content: center;
     margin-top: 1388px;
-    margin-bottom: 937px;;
+    margin-bottom: 850px;;
 }
 .exp p{
     color: rgb(255, 255, 255);
@@ -141,7 +149,7 @@ svg{
     text-align: center;
     width: 260px;
     height: 39px;
-    margin-top: 24px;
+    margin-top: 140px;
 
 }
 .accordeon{
@@ -192,12 +200,9 @@ svg{
 
 }
 
-
-
-
 .slider {
     position: relative;
-    max-width: 275px;
+    max-width: 310px;
     height: 300px;
     margin: 50px auto 0;
     user-select: none;
@@ -207,7 +212,7 @@ svg{
   
   
   .slider-list {
-    width: 275x;
+    width: 310px;
     height: 200px;
     overflow: hidden;
   }
@@ -225,7 +230,7 @@ svg{
   }
   
   .slide {
-    width: 275px;
+    width: 310px;
     height: 200px;
     flex-shrink: 0;
     font-size: 15px;
@@ -262,7 +267,7 @@ svg{
     margin-left: 12px;
   }
   .slide-text{
-    width: 250px;
+    width: 275px;
     height: 105px;
     color: rgb(255, 255, 255);
     font-family: Arial;
@@ -274,6 +279,132 @@ svg{
     margin-top: 13px;
   }
 
+  .form-below{
+    width: 255px;
+    margin: auto;
+    font-family: 'Benzin';
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #fff;
+  }
+  span{
+    color: #A92684;
+  }
+  .form-bellow-p{
+    margin-bottom: 20px;
+  }
+  .book-gift-1, .book-gift-2{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: -1%;
+    text-align: left;
+  }
+
+
+  .form-email{
+    background: #2F303A;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.48px;
+    padding-left: 16px;
+    transition: 0.4s;
+    &:focus{
+        border: 1px solid #A92684;
+        color: #FFF;
+    }
+}
+
+.form-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background: #A92684;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+.form-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.label-margin{
+    margin-top: 25px;
+}
+.form-text{
+    padding-top: 10px;
+}
+.img1{
+    position: absolute;
+    right:210px;
+    width: 142px;
+    top: 285px;
+    z-index: 10;
+}
+.img2{
+    position: absolute;
+    right: 75px;
+    top: 351px;
+    width: 144px;
+    z-index: 1;
+}
+.img3{
+    position: absolute;
+    right: 35px;
+    top: 971px;
+    width: 144px;
+    z-index: 30;
+}
+.img4{
+    position: absolute;
+    right: 90px;
+    top: 1116px;
+    width: 144px;
+}
+svg{
+    display: block;
+}
+.svg-absolute{
+    position: absolute;
+    top: 1960px;
+}
+.one-shot{
+ margin-left: 30px;
+}
+.img5{
+    position: absolute;
+    top: 1530px;
+    left: 40px;
+}
 @media screen and (max-width: 400px) {
     .howChanged{
         margin-top: 420px;
@@ -288,6 +419,11 @@ svg{
 
   }
   @media screen and (max-width: 375px){
+    .img5{
+        position: absolute;
+        top: 1360px;
+        left: 40px;
+    }
     .howChanged{
         margin-top: 390px;
     }
@@ -298,6 +434,62 @@ svg{
 
         margin-top: 1210px;
     }
+    .img1{
+        position: absolute;
+        right:185px;
+        width: 142px;
+        top: 265px;
+        z-index: 10;
+    }
+    .img2{
+        position: absolute;
+        right: 50px;
+        top: 331px;
+        width: 144px;
+        z-index: 1;
+    }
+    .img3{
+    position: absolute;
+    right: 25px;
+    top: 807px;
+    z-index: 30;
+}
+.svg-absolute{
+    position: absolute;
+    top: 1750px;
+}
+.img4{
+    position: absolute;
+    right: 70px;
+    top: 937px;
+}
+
+.accordeon{
+    color: #fff;
+    width: 272px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    margin: auto;
+    background-image: linear-gradient(#009542, #000, #000);
+    margin-top: 30px;
+
+}
+.exp-svg{
+    margin-top: 35px;
+    position: absolute;
+}
+.exp p{
+    color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: -1%;
+  text-align: center;
+  width: 260px;
+  height: 39px;
+  margin-top: 55px;
+}
   }
   @media screen and (max-width: 365px){
     .howChanged{
@@ -309,7 +501,31 @@ svg{
   }
   @media screen and (max-width: 385px){
     .counter-container{
-        margin-top: 140px;
+        margin-top: 0px;
     }
   }
-  
+  @media screen and (max-width: 320px){
+    .img1{
+        position: absolute;
+        right:155px;
+        width: 142px;
+        top: 215px;
+        z-index: 10;
+    }
+    .img2{
+        position: absolute;
+        right: 10px;
+        top: 71px;
+        z-index: 1;
+    }
+    .img3{
+        position: absolute;
+        right: 23px;
+        top: 671px;
+        width: 144px;
+        z-index: 1;
+    }
+    .img4{
+        display: none;
+    }
+}
